@@ -81,7 +81,7 @@ function mostrarCarrito(){
     let totalCarro = document.getElementById ("totalCarro");
     for (let i=0;i<arr.length;i++){
         let etiquetaP= document.createElement ("p");
-        etiquetaP.innerHTML=`ID: ${arr[i].id} TITULO: ${arr[i].title} CANTIDAD: ${arr[i].cant} PRECIO:${arr[i].precio} <br>`
+        etiquetaP.innerHTML=`ARTICULO #: ${i} - ID: ${arr[i].id} TITULO: ${arr[i].title} CANTIDAD: ${arr[i].cant} PRECIO:${arr[i].precio} <br>`
         totalCarro.appendChild(etiquetaP);
     }
     
